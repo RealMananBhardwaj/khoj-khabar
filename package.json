@@ -1,0 +1,8 @@
+{
+  "name": "khoj-khabar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node server.js", "public": "cloudflared tunnel --url http://localhost:4173", "cf:dev": "wrangler dev", "cf:deploy": "wrangler deploy" },
+  "engines": { "node": ">=22" }
+}

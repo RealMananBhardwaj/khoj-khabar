@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS items (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  status TEXT NOT NULL CHECK (status IN ('Found', 'Looking for')),
+  location TEXT NOT NULL,
+  date TEXT NOT NULL,
+  details TEXT NOT NULL DEFAULT '',
+  image TEXT NOT NULL DEFAULT '',
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

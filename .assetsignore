@@ -1,0 +1,8 @@
+server.js
+package.json
+README.md
+schema.sql
+wrangler.toml
+.gitignore
+.assetsignore
+data/
